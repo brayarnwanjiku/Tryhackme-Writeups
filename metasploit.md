@@ -118,6 +118,36 @@ Leaving a Metasploit console running isn't always convenient and it can be helpf
 
 ## Task four: Modules for every occassion
 
+This section will maily focus on the various modules offered by metasploit.
+
+Easily the most common module utilized, which module holds all of the exploit code we will use?
+
+    Answer: Exploit
+
+Used hand in hand with exploits, which module contains the various bits of shellcode we send to have executed following exploitation? 
+
+    Answer: Payload
+    
+Which module is most commonly used in scanning and verification machines are exploitable? This is not the same as the actual exploitation of course. 
+    
+    Answer: Auxilliary
+    
+One of the most common activities after exploitation is looting and pivoting. Which module provides these capabilities?
+
+    Answer: Post 
+    
+Commonly utilized in payload obfuscation, which module allows us to modify the 'appearance' of our exploit such that we may avoid signature detection?
+
+    Answer:Encoder
+    
+Last but not least, which module is used with buffer overflow and ROP attacks?
+
+    Answer: Nop 
+    
+Not every module is loaded in by default, what command can we use to load different modules? 
+
+    Answer: Load
+
 
 
 
