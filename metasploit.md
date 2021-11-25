@@ -147,6 +147,41 @@ Last but not least, which module is used with buffer overflow and ROP attacks?
 Not every module is loaded in by default, what command can we use to load different modules? 
 
     Answer: Load
+    
+## Task five: Move that Shell
+
+Metasploit comes with a built-in way to run nmap and feed it's results directly into our database. Let's run that now by using the command 
+
+    Answer: No answer needed 
+    
+What service does nmap identify running on port 135?
+
+    Answer: msrpc 
+    
+Let's go ahead and see what information we have collected in the database. Try typing the command hosts into the msfconsole now.
+
+    Answer: No answer needed 
+    
+How about something else from the database, try the command services now.
+
+    Answer: No answer needed
+    
+One last thing, try the command vulns now. This won't show much at the current moment, however, it's worth noting that Metasploit will keep track of discovered vulnerabilities. One of the many ways the database can be leveraged quickly and powerfully. 
+
+    Answer: No answer needed
+    
+Now that we've scanned our victim system, let's try connecting to it with a Metasploit payload. First, we'll have to search for the target payload. In Metasploit 5 (the most recent version at the time of writing) you can simply type use followed by a unique string found within only the target exploit. For example, try this out now with the following command use icecast. What is the full path for our exploit that now appears on the msfconsole prompt? *This will include the exploit section at the start
+
+    Answer: exploit/windows/http/icecast_header
+    
+Let's now run the command search multi/handler.
+Go ahead and run the command use NUMBER_NEXT_TO  exploit/multi/handler wherein the number will be what appears in that far left column (typically this will be 4 or 5). In this way, we can use our search results without typing out the full name/path of the module we want to use.
+
+    Answer: 
+
+
+
+
 
 
 
